@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"  />
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping_App</title>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="logo">Shopify</div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#iteams">Items</a>
+                <a href="#man">Men</a>
+                <a href="#women">Women</a>
+                <a href="#kids">Kids</a>
+                <button id="shop">Shopping</button>
+            </div>
+            
+            <a href="./cart.html">
+                <span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+            </a>
+            <span><i onclick="loginfunction()" class="fa-solid fa-user"></i></span>
+            
+        </nav>
+        <section>
+            <div class="main">
+                <div class="login">
+                    <span class="closeicon" onclick="closefunction()">&times;</span>
+                    <h3>Login to your supplier panel</h3>
+                    <span>Login to app</span>
+                    <input type="email" name="mail" id="mail" placeholder="Email address or phone number">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <button id="Login_btn" onclick="closefunction()">Log in</button>
+                    <a class="fgt" href="#">Forgotten password?</a>
+                </div>
+            </div>
+        
+
+        <div class="container">
+            <div class="left">
+                <img src="pic1.jfif" alt="pic">
+            </div>
+
+            <div class="right">
+                <h1>Holi Offers</h1>
+                <p>Here we are giving best offers of holi. You can save your 50% moeny.</p>
+                <p>50% Discount!</p>
+                <button>Shop</button>
+            </div>
+        </div>
+    </header>
+
+<section id="iteams">
+        <h1>Items</h1>
+    <div class="All_pics">
+        <div class="img-box1">
+            <img src="pics/image11.jpg" alt="">
+            <img src="pics/image1.jpg" alt="">
+
+            <div class="Price">Price: &#x20B9; 900</div>
+        </div>
+        <div>
+            <img src="pics/image2.jpg" alt="">
+            <div class="Price">Price: &#x20B9; 900</div>
+        </div>
+        <div>
+            <img src="pics/image3.jpg" alt="">
+            <div class="Price">Price: &#x20B9; 900</div>
+        </div>
+        <div>
+            <img src="pics/image4.jpg" alt="">
+            <div class="Price">Price:&#x20B9; 900</div>
+        </div>
+        <div>
+            <img src="pics/image5.jpg" alt="">
+            <div class="Price">Price: &#x20B9; 900</div>
+        </div>
+    </div>
+</section>
+
+<section id="man">
+    <div class="mens-row">
+        <div class="mens-box">
+            <img src="pics/man1.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/man2.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/man3.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/man4.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/man5.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+    </div>
+</section>
+
+<section id="women">
+    <div class="mens-row">
+        <div class="mens-box">
+            <img src="pics/women1.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/women2.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/women3.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/women4.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/women5.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+    </div>
+</section>
+
+
+<section id="kids">
+    <div class="mens-row">
+        <div class="mens-box">
+            <img src="pics/kid1.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/kid2.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/kid3.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+
+        <div class="mens-box">
+            <img src="pics/kid4.jfif" alt="">
+            <h3>Brand: aadi<br>&#x20B9; 900</h3>
+            <button onclick="addToCartHandler(event)">Add to cart</button>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <button>Back to top<button>
+</section>
+
+
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+header{
+    width:100%;
+    height: 50vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+	height: 70px;
+	border-bottom: 1px solid grey;
+	box-shadow: 2px 0px 5px grey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+    /* left: 40px; */
+	top:0;
+	z-index: 1;
+	background: white;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.menu{
+    margin-left: 150px;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+    position: relative;
+    /* right:80px; */
+    
+       
+}
+
+.menu a:last-child{
+    background: black;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: center;
+    transform-origin: center;
+    perspective: 2000px;
+}
+
+.left{
+    flex-basis:50%;
+    margin-top: 150px;
+    animation:animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+
+    }
+}
+
+.right{
+    flex-basis: 50%;
+    max-width: 400px;
+    margin-left:100px;
+    margin-top: 70px;
+}
+
+.right h1{
+    font-size: 50px;
+}
+
+.right p{
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+button{
+    background: black;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 20px;
+}
+
+span i{
+    position: relative;
+    right: 50px;
+    font-size: 50px;
+    color: black;
+}
+
+
+
+#iteams{
+    padding: 50px 0px;
+    margin-top: 60px;
+    /* font-family: 50px; */
+    font-size: 50px;
+    text-align: center;
+}
+
+.All_pics{
+    display: grid;
+    grid-template-columns:repeat(4,20%);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+    justify-content: center;   
+}
+.All_pics>div{
+    border: 1px solid gray;
+    position: relative;
+}
+
+.All_pics> div img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-box1{
+    grid-row:1/3;
+    grid-column: 1/3;
+}
+
+.Price{
+    position: absolute;
+    bottom:0;
+    right:0;
+    background: black;
+    color: white;
+    font-size: 16px;
+}
+
+.All_pics> div img:hover{
+    transform: scale(1.1);
+    transition: 0.4s linear;
+}
+#man{
+    padding: 80px 0px;
+}
+
+.mens-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mens-box{
+    flex-basis: 15%;
+    box-shadow: 2px 3px 5px grey;
+    padding: 10px;
+    text-align: center;
+}
+
+.mens-box img{
+    width: 100%;
+}
+
+.mens-box h3{
+    margin: 20px 0px;
+}
+
+.mens-box h4{
+    background: black;
+    color: white;
+    padding: 10px ;
+}
+
+.mens-box:hover{
+    transform: scale(1.1);
+    transition: 0.4s linear;
+
+}
+
+#women{
+    padding: 100px 0px;
+}
+
+#kids{
+    padding: 100px 0px;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: black;
+    color: white;
+    padding: 10px;  
+}
+
+.main{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    background-color: #f0f2f5;
+   
+}
+
+span{
+    padding-bottom: 10px;
+
+}
+input{
+    width: 300px;
+    height: 30px;
+    padding: 20px 0px;
+    border-radius: 6px ;
+}
+.login input{
+    padding-left: 0.5rem;
+}
+
+.login{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 330px;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 1px rgb(0,0,0,0.2);
+    justify-content: space-around;
+    gap: 10px;
+    top: -50%;
+    position: absolute;
+    transition: 2s;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main .login a{
+    margin-bottom: 1rem;
+}
+
+.showlogin{
+    top: 50%;
+}
+
+.login .closeicon{
+    margin-left: 20rem;
+    margin-top: 0.5rem;
+    background-color: black;
+    color: white;
+    padding: 1rem ;
+}
+
